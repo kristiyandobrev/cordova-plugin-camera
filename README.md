@@ -317,11 +317,11 @@ Matches iOS UIPopoverArrowDirection constants to specify arrow location on popov
 
 | Name | Type | Default |
 | --- | --- | --- |
-| ARROW_UP | <code>number</code> | <code>1</code> | 
-| ARROW_DOWN | <code>number</code> | <code>2</code> | 
-| ARROW_LEFT | <code>number</code> | <code>4</code> | 
-| ARROW_RIGHT | <code>number</code> | <code>8</code> | 
-| ARROW_ANY | <code>number</code> | <code>15</code> | 
+| ARROW_UP | <code>number</code> | <code>1</code> |
+| ARROW_DOWN | <code>number</code> | <code>2</code> |
+| ARROW_LEFT | <code>number</code> | <code>4</code> |
+| ARROW_RIGHT | <code>number</code> | <code>8</code> |
+| ARROW_ANY | <code>number</code> | <code>15</code> |
 
 <a name="module_Camera.Direction"></a>
 
@@ -447,6 +447,8 @@ for more information. The `pendingResult.result` value will contain the value th
 would be passed to the callbacks (either the URI/URL or an error message). Check
 the `pendingResult.pluginStatus` to determine whether or not the call was
 successful.
+
+If `Developer Options->Don't keep activities` is `enabled` it will eliminate any activity when leave them. In the case of the `Camera` it will restart the activity. To solve that issue simply `disable` the `Developer Options->Don't keep activities` option.
 
 #### Browser Quirks
 
